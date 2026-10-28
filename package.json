@@ -1,6 +1,6 @@
 {
   "name": "@miarma/mtheme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tema común de las webs de miarma.net",
   "type": "module",
   "files": ["css", "dist", "fonts"],
