@@ -1,0 +1,59 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: catthehacker/ubuntu:act-latest
+      volumes:
+        - /var/www/mcdn/files/mtheme:/deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Versioning
+        id: version
+        run: |
+          VERSION=$(sed -n 's/^ *"version": *"\(.*\)",*$/\1/p' package.json | head -n 1)
+          if ! printf '%s' "$VERSION" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::La versión de package.json no es major.minor.fix: '$VERSION'"
+            exit 1
+          fi
+          if git ls-remote --exit-code --tags origin "refs/tags/v$VERSION" > /dev/null; then
+            echo "::error::v$VERSION ya está publicada. Sube la versión en package.json."
+            exit 1
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "major=${VERSION%%.*}" >> "$GITHUB_OUTPUT"
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build
+        run: npm run build
+
+      - name: Copy to CDN
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+          MAJOR: ${{ steps.version.outputs.major }}
+        run: |
+          command -v rsync > /dev/null || (apt-get update && apt-get install -y --no-install-recommends rsync)
+          rsync -r --chmod=D755,F644 dist/ "/deploy/$VERSION/"
+          rsync -r --delete-after --delay-updates --chmod=D755,F644 dist/ "/deploy/v$MAJOR/"
+
+      - name: Git tag
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          git tag "v$VERSION"
+          git push origin "v$VERSION"

@@ -1,0 +1,17 @@
+{
+  "name": "@miarma/mtheme",
+  "version": "1.0.0",
+  "description": "Tema común de las webs de miarma.net",
+  "type": "module",
+  "files": ["css", "dist", "fonts"],
+  "exports": {
+    ".": "./dist/miarma.css",
+    "./tokens.css": "./dist/tokens.css",
+    "./bootstrap.css": "./dist/bootstrap.css",
+    "./tailwind.css": "./css/tailwind.css"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "prepare": "node build.mjs"
+  }
+}

@@ -1,0 +1,16 @@
+@theme inline {
+  --color-miarma-bg: var(--miarma-bg);
+  --color-miarma-blue: var(--miarma-blue);
+  --color-miarma-blue-dark: var(--miarma-blue-dark);
+  --color-miarma-blue-deep: var(--miarma-blue-deep);
+  --color-miarma-blue-night: var(--miarma-blue-night);
+  --color-miarma-orange: var(--miarma-orange);
+  --color-miarma-orange-deep: var(--miarma-orange-deep);
+  --color-miarma-orange-light: var(--miarma-orange-light);
+  --color-miarma-text: var(--miarma-text);
+  --color-miarma-text-muted: var(--miarma-text-muted);
+
+  --font-sans: var(--miarma-font-body);
+  --font-mono: var(--miarma-font-body);
+  --font-display: var(--miarma-font-display);
+}
