@@ -1,6 +1,6 @@
 {
   "name": "@killobyte/theme",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Tema común de las webs de killobyte.es",
   "type": "module",
   "files": ["css", "dist", "fonts", "js"],
