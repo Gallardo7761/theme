@@ -1,18 +1,18 @@
 # mtheme
 
-Tema común de las webs de miarma.net
+Tema común de las webs de killobyte.es
 
 | Variable | Valor |
 | --- | --- |
-| `--miarma-bg` | `#010910` |
-| `--miarma-blue` | `#2F6CA3` |
-| `--miarma-blue-dark` | `#0A365E` |
-| `--miarma-blue-deep` | `#051c31` |
-| `--miarma-blue-night` | `#031322` |
-| `--miarma-orange` | `#c1763c` |
-| `--miarma-orange-deep` | `#7e4a22` |
-| `--miarma-orange-light` | `#e3bb9d` |
-| `--miarma-text` | `#eef3f7` |
-| `--miarma-text-muted` | `#84a2bd` |
-| `--miarma-font-body` | JetBrains Mono |
-| `--miarma-font-display` | Space Grotesk |
+| `--kb-bg` | `#010910` |
+| `--kb-blue` | `#2F6CA3` |
+| `--kb-blue-dark` | `#0A365E` |
+| `--kb-blue-deep` | `#051c31` |
+| `--kb-blue-night` | `#031322` |
+| `--kb-orange` | `#c1763c` |
+| `--kb-orange-deep` | `#7e4a22` |
+| `--kb-orange-light` | `#e3bb9d` |
+| `--kb-text` | `#eef3f7` |
+| `--kb-text-muted` | `#84a2bd` |
+| `--kb-font-body` | JetBrains Mono |
+| `--kb-font-display` | Space Grotesk |

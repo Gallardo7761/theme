@@ -1,4 +1,4 @@
-class MiarmaHeader extends HTMLElement {
+class KBHeader extends HTMLElement {
   static observedAttributes = ['site', 'tag', 'href'];
 
   connectedCallback() {
@@ -14,23 +14,23 @@ class MiarmaHeader extends HTMLElement {
 
   render() {
     this.brand = document.createElement('a');
-    this.brand.className = 'miarma-header__brand';
+    this.brand.className = 'kb-header__brand';
     this.brand.innerHTML = `
-      <img src="https://cdn.miarma.net/files/img/logo-without-text.svg" alt="" width="40" height="40">
+      <img src="https://cdn.killobyte.es/files/img/logo-without-text.svg" alt="" width="40" height="40">
       <span>
-        <span class="miarma-header__title"></span>
-        <span class="miarma-header__tag"></span>
+        <span class="kb-header__title"></span>
+        <span class="kb-header__tag"></span>
       </span>`;
   }
 
   update() {
     const site = this.getAttribute('site');
-    const host = site ? `${site}.miarma.net` : 'miarma.net';
+    const host = site ? `${site}.killobyte.es` : 'killobyte.es';
     this.brand.href = this.getAttribute('href') ?? '/';
-    this.brand.querySelector('.miarma-header__title').innerHTML =
-      host.split('.').join('<span class="miarma-header__dot">.</span>');
-    this.brand.querySelector('.miarma-header__tag').textContent = this.getAttribute('tag') ?? '';
+    this.brand.querySelector('.kb-header__title').innerHTML =
+      host.split('.').join('<span class="kb-header__dot">.</span>');
+    this.brand.querySelector('.kb-header__tag').textContent = this.getAttribute('tag') ?? '';
   }
 }
 
-if (!customElements.get('miarma-header')) customElements.define('miarma-header', MiarmaHeader);
+if (!customElements.get('kb-header')) customElements.define('kb-header', KBHeader);

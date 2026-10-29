@@ -1,15 +1,15 @@
 :root:root, :root:root[data-bs-theme] {
-  --bs-body-bg: var(--miarma-bg);
-  --bs-body-color: var(--miarma-text);
-  --bs-body-font-family: var(--miarma-font-body);
-  --bs-heading-color: var(--miarma-text);
-  --bs-secondary-color: var(--miarma-text-muted);
-  --bs-border-color: var(--miarma-blue-dark);
-  --bs-primary: var(--miarma-blue);
+  --bs-body-bg: var(--kb-bg);
+  --bs-body-color: var(--kb-text);
+  --bs-body-font-family: var(--kb-font-body);
+  --bs-heading-color: var(--kb-text);
+  --bs-secondary-color: var(--kb-text-muted);
+  --bs-border-color: var(--kb-blue-dark);
+  --bs-primary: var(--kb-blue);
   --bs-primary-rgb: 47, 108, 163;
-  --bs-link-color: var(--miarma-blue);
+  --bs-link-color: var(--kb-blue);
   --bs-link-color-rgb: 47, 108, 163;
-  --bs-link-hover-color: var(--miarma-orange-light);
+  --bs-link-hover-color: var(--kb-orange-light);
   --bs-link-hover-color-rgb: 227, 187, 157;
 }
 

@@ -1,16 +1,16 @@
-miarma-footer { display: block; }
+kb-footer { display: block; }
 
-.miarma-footer {
+.kb-footer {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem 2rem;
   justify-content: center;
   padding: 1.2rem 16px 1.6rem;
-  font-family: var(--miarma-font-body);
+  font-family: var(--kb-font-body);
   font-size: 0.72rem;
-  color: var(--miarma-text-muted);
+  color: var(--kb-text-muted);
 }
 
-.miarma-footer__links { display: flex; gap: 1.4rem; }
-.miarma-footer a { color: var(--miarma-orange-light); text-decoration: none; transition: color 0.2s ease; }
-.miarma-footer a:hover { color: var(--miarma-text); }
+.kb-footer__links { display: flex; gap: 1.4rem; }
+.kb-footer a { color: var(--kb-orange-light); text-decoration: none; transition: color 0.2s ease; }
+.kb-footer a:hover { color: var(--kb-text); }

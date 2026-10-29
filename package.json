@@ -1,14 +1,14 @@
 {
-  "name": "@miarma/mtheme",
-  "version": "1.1.0",
-  "description": "Tema común de las webs de miarma.net",
+  "name": "@killobyte/theme",
+  "version": "2.0.0",
+  "description": "Tema común de las webs de killobyte.es",
   "type": "module",
   "files": ["css", "dist", "fonts", "js"],
   "exports": {
-    ".": "./dist/miarma.css",
+    ".": "./dist/kb.css",
     "./tokens.css": "./dist/tokens.css",
     "./bootstrap.css": "./dist/bootstrap.css",
-    "./miarma.js": "./dist/miarma.js",
+    "./kb.js": "./dist/kb.js",
     "./tailwind.css": "./css/tailwind.css"
   },
   "scripts": {
