@@ -1,15 +1,16 @@
 {
   "name": "@killobyte/theme",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Tema común de las webs de killobyte.es",
   "type": "module",
-  "files": ["css", "dist", "fonts", "js"],
+  "files": ["css", "dist", "fonts", "img", "js"],
   "exports": {
     ".": "./dist/kb.css",
     "./tokens.css": "./dist/tokens.css",
     "./bootstrap.css": "./dist/bootstrap.css",
     "./kb.js": "./dist/kb.js",
-    "./tailwind.css": "./css/tailwind.css"
+    "./tailwind.css": "./css/tailwind.css",
+    "./img/*": "./dist/img/*"
   },
   "scripts": {
     "build": "node build.mjs",

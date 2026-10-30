@@ -1,14 +1,15 @@
 :root {
-  --kb-bg: #010910;
-  --kb-blue: #2F6CA3;
-  --kb-blue-dark: #0A365E;
-  --kb-blue-deep: #051c31;
-  --kb-blue-night: #031322;
-  --kb-orange: #c1763c;
-  --kb-orange-deep: #7e4a22;
-  --kb-orange-light: #e3bb9d;
-  --kb-text: #eef3f7;
-  --kb-text-muted: #84a2bd;
+  --kb-bg: #0F1D16;
+  --kb-green: #7DB896;
+  --kb-green-dark: #2C4B3B;
+  --kb-green-deep: #1C3328;
+  --kb-green-night: #142419;
+  --kb-orange: #E2621A;
+  --kb-orange-deep: #8F3D10;
+  --kb-orange-light: #F6CBA8;
+  --kb-gold: #E8B54A;
+  --kb-text: #FBF6EC;
+  --kb-text-muted: #8EA596;
 
   --kb-font-body: "JetBrains Mono", ui-monospace, monospace;
   --kb-font-display: "Space Grotesk", sans-serif;

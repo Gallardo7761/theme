@@ -1,4 +1,3 @@
-/* En una capa para que los estilos propios de cada web (y las utilidades de Tailwind) siempre ganen */
 @layer base {
   html, body {
     font-family: var(--kb-font-body);
@@ -11,16 +10,16 @@
   button, input, select, textarea { font: inherit; }
   h1, h2, h3, h4, h5, h6 { font-family: var(--kb-font-display); color: var(--kb-text); }
 
-  a { color: var(--kb-blue); text-decoration: none; transition: color 0.2s ease; }
+  a { color: var(--kb-green); text-decoration: none; transition: color 0.2s ease; }
   a:hover { color: var(--kb-orange-light); }
 
-  ::selection { background: var(--kb-blue); color: var(--kb-text); }
+  ::selection { background: var(--kb-green-dark); color: var(--kb-text); }
 
   :focus-visible { outline: 2px solid var(--kb-orange-light); outline-offset: 3px; border-radius: 2px; }
 
   ::-webkit-scrollbar { width: 10px; height: 10px; }
-  ::-webkit-scrollbar-track { background: var(--kb-blue-night); }
-  ::-webkit-scrollbar-thumb { background: var(--kb-blue-dark); border-radius: 6px; }
-  ::-webkit-scrollbar-thumb:hover { background: var(--kb-blue); }
-  html { scrollbar-color: var(--kb-blue-dark) var(--kb-blue-night); }
+  ::-webkit-scrollbar-track { background: var(--kb-green-night); }
+  ::-webkit-scrollbar-thumb { background: var(--kb-green-dark); border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--kb-green); }
+  html { scrollbar-color: var(--kb-green-dark) var(--kb-green-night); }
 }

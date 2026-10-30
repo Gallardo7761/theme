@@ -5,6 +5,7 @@ const read = (name) => readFileSync(`css/${name}`, 'utf8').replaceAll('../fonts/
 rmSync('dist', { recursive: true, force: true });
 mkdirSync('dist');
 cpSync('fonts', 'dist/fonts', { recursive: true });
+cpSync('img', 'dist/img', { recursive: true });
 
 writeFileSync('dist/kb.css', ['fonts.css', 'tokens.css', 'base.css', 'shell.css', 'footer.css'].map(read).join('\n'));
 writeFileSync('dist/tokens.css', read('tokens.css'));

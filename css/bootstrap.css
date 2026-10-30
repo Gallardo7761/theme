@@ -4,13 +4,13 @@
   --bs-body-font-family: var(--kb-font-body);
   --bs-heading-color: var(--kb-text);
   --bs-secondary-color: var(--kb-text-muted);
-  --bs-border-color: var(--kb-blue-dark);
-  --bs-primary: var(--kb-blue);
-  --bs-primary-rgb: 47, 108, 163;
-  --bs-link-color: var(--kb-blue);
-  --bs-link-color-rgb: 47, 108, 163;
+  --bs-border-color: var(--kb-green-dark);
+  --bs-primary: var(--kb-green);
+  --bs-primary-rgb: 125, 184, 150;
+  --bs-link-color: var(--kb-green);
+  --bs-link-color-rgb: 125, 184, 150;
   --bs-link-hover-color: var(--kb-orange-light);
-  --bs-link-hover-color-rgb: 227, 187, 157;
+  --bs-link-hover-color-rgb: 246, 203, 168;
 }
 
 html a { text-decoration: none; }
