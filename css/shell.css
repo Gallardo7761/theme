@@ -1,68 +1,47 @@
-:root { --kb-width: 1000px; }
-
 .kb-shell { display: flex; flex-direction: column; min-height: 100vh; }
 .kb-shell > main { flex: 1; }
 
-.kb-container {
+.kb-container, kb-header, .kb-footer {
   box-sizing: border-box;
-  width: 100%;
-  max-width: calc(var(--kb-width) + 32px);
+  width: min(100% - 32px, var(--kb-width));
   margin-inline: auto;
-  padding-inline: 16px;
 }
 
+.kb-container { padding-bottom: 3rem; }
+.kb-container > :first-child { margin-top: 2rem; }
+
+/* tablas anchas: scroll dentro, nunca en la página */
+.kb-scroll { overflow-x: auto; }
+
+.kb-muted { color: var(--kb-muted); }
+.kb-mono { font-family: var(--kb-font-mono); }
+
 kb-header {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  max-width: calc(var(--kb-width) + 32px);
-  margin-inline: auto;
-  padding: clamp(1.5rem, 5vh, 2.5rem) 16px clamp(1.5rem, 4vh, 2.5rem);
+  align-items: flex-end;
+  gap: 0.6rem 2ch;
+  padding: 1.4rem 0 0.7rem;
+  border-bottom: 1px solid var(--kb-rule);
 }
 
 .kb-header__brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1.5ch;
   margin-right: auto;
-  color: var(--kb-text);
+  color: var(--kb-ink);
   text-decoration: none;
 }
 
-.kb-header__brand:hover { color: var(--kb-text); }
+.kb-header__brand:visited, .kb-header__brand:hover { color: var(--kb-ink); }
+.kb-header__brand img { flex: none; transition: transform 0.3s ease; }
+.kb-header__brand:hover img { transform: rotate(-12deg); }
 
-.kb-header__brand img {
-  flex: none;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.kb-header__brand:hover img { transform: rotate(-10deg); }
-
-.kb-header__title {
-  display: block;
-  margin: 0;
-  font-family: var(--kb-font-display);
-  font-weight: 700;
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
-  line-height: 1;
-  letter-spacing: -0.01em;
-  color: var(--kb-text);
-}
-
-.kb-header__dot { color: var(--kb-orange); }
-
-.kb-header__tag {
-  display: block;
-  margin-top: 0.3rem;
-  font-family: var(--kb-font-body);
-  font-size: 0.72rem;
-  line-height: 1.4;
-  color: var(--kb-text-muted);
-}
+.kb-header__title { display: block; font-size: 1.15rem; font-weight: 700; line-height: 1.2; }
+.kb-header__dot { color: var(--kb-accent); }
+.kb-header__tag { display: block; font-size: 0.8rem; color: var(--kb-muted); }
 
 @media (prefers-reduced-motion: reduce) {
-  .kb-header__brand img { transition: none; }
+  * { transition: none !important; }
 }

@@ -9,5 +9,4 @@ cpSync('img', 'dist/img', { recursive: true });
 
 writeFileSync('dist/kb.css', ['fonts.css', 'tokens.css', 'base.css', 'shell.css', 'footer.css'].map(read).join('\n'));
 writeFileSync('dist/tokens.css', read('tokens.css'));
-writeFileSync('dist/bootstrap.css', read('bootstrap.css'));
 writeFileSync('dist/kb.js', ['header.js', 'footer.js'].map((name) => readFileSync(`js/${name}`, 'utf8')).join('\n'));

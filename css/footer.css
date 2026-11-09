@@ -3,14 +3,13 @@ kb-footer { display: block; }
 .kb-footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem 2rem;
-  justify-content: center;
-  padding: 1.2rem 16px 1.6rem;
-  font-family: var(--kb-font-body);
-  font-size: 0.72rem;
-  color: var(--kb-text-muted);
+  justify-content: space-between;
+  gap: 0.4rem 2ch;
+  padding: 0.7rem 0 1.5rem;
+  border-top: 1px solid var(--kb-rule);
+  font-size: 0.8rem;
+  color: var(--kb-muted);
 }
 
-.kb-footer__links { display: flex; gap: 1.4rem; }
-.kb-footer a { color: var(--kb-orange-light); text-decoration: none; transition: color 0.2s ease; }
-.kb-footer a:hover { color: var(--kb-text); }
+.kb-footer__heart { color: var(--kb-accent); }
+.kb-footer__links { display: flex; gap: 2ch; }

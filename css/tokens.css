@@ -1,16 +1,40 @@
 :root {
-  --kb-bg: #0F1D16;
-  --kb-green: #7DB896;
-  --kb-green-dark: #2C4B3B;
-  --kb-green-deep: #1C3328;
-  --kb-green-night: #142419;
-  --kb-orange: #E2621A;
-  --kb-orange-deep: #8F3D10;
-  --kb-orange-light: #F6CBA8;
-  --kb-gold: #E8B54A;
-  --kb-text: #FBF6EC;
-  --kb-text-muted: #8EA596;
+  --kb-paper: #FDFCF8;
+  --kb-ink: #18201B;
+  --kb-muted: #5B6B61;
+  --kb-rule: #2C4B3B;
+  --kb-rule-soft: #C9D6CD;
+  --kb-shade: #E4EFE7;
+  --kb-tint: #F2F7F3;
+  --kb-green: #2C4B3B;
+  --kb-green-light: #7DB896;
+  --kb-accent: #E2621A;
+  --kb-accent-soft: #F6CBA8;
+  --kb-link: #1F6B45;
+  --kb-link-visited: #8F3D10;
 
-  --kb-font-body: "JetBrains Mono", ui-monospace, monospace;
-  --kb-font-display: "Space Grotesk", sans-serif;
+  --kb-font-body: "JetBrains Mono", ui-monospace, "DejaVu Sans Mono", monospace;
+  --kb-font-mono: var(--kb-font-body);
+
+  --kb-width: 880px;
+
+  color-scheme: light;
+}
+
+/* de noche, el verde oscuro de siempre */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --kb-paper: #0F1D16;
+    --kb-ink: #FBF6EC;
+    --kb-muted: #8EA596;
+    --kb-rule: #7DB896;
+    --kb-rule-soft: #2C4B3B;
+    --kb-shade: #1C3328;
+    --kb-tint: #142419;
+    --kb-green: #7DB896;
+    --kb-link: #F0A06A;
+    --kb-link-visited: #D9824A;
+
+    color-scheme: dark;
+  }
 }

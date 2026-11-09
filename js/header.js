@@ -1,4 +1,4 @@
-const LOGO = new URL('img/marca-clara.svg', import.meta.url).href;
+const LOGO = new URL('img/marca.svg', import.meta.url).href;
 
 class KBHeader extends HTMLElement {
   static observedAttributes = ['site', 'tag', 'href'];
@@ -18,7 +18,7 @@ class KBHeader extends HTMLElement {
     this.brand = document.createElement('a');
     this.brand.className = 'kb-header__brand';
     this.brand.innerHTML = `
-      <img src="${LOGO}" alt="" width="40" height="40">
+      <img src="${LOGO}" alt="" width="32" height="32">
       <span>
         <span class="kb-header__title"></span>
         <span class="kb-header__tag"></span>

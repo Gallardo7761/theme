@@ -1,15 +1,13 @@
 {
   "name": "@killobyte/theme",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Tema común de las webs de killobyte.es",
   "type": "module",
   "files": ["css", "dist", "fonts", "img", "js"],
   "exports": {
     ".": "./dist/kb.css",
     "./tokens.css": "./dist/tokens.css",
-    "./bootstrap.css": "./dist/bootstrap.css",
     "./kb.js": "./dist/kb.js",
-    "./tailwind.css": "./css/tailwind.css",
     "./img/*": "./dist/img/*"
   },
   "scripts": {
