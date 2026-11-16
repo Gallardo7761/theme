@@ -1,6 +1,6 @@
 const LINKS = [
   ['Email', 'mailto:jose@killobyte.es', 'noopener noreferrer'],
-  ['Mastodon', 'https://masto.es/@gallardo7761', 'me noopener noreferrer'],
+  ['Mastodon', 'https://social.killobyte.es/@gallardo7761', 'me noopener noreferrer'],
 ];
 
 class KBFooter extends HTMLElement {
