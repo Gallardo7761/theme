@@ -1,6 +1,5 @@
 const LINKS = [
-  ['Fragua', 'https://git.killobyte.es/Gallardo7761', 'noopener noreferrer'],
-  ['Instagram', 'https://instagram.com/gallardoo7761', 'noopener noreferrer'],
+  ['Email', 'mailto:jose@killobyte.es', 'noopener noreferrer'],
   ['Mastodon', 'https://masto.es/@gallardo7761', 'me noopener noreferrer'],
 ];
 

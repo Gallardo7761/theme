@@ -21,20 +21,4 @@
   color-scheme: light;
 }
 
-/* de noche, el verde oscuro de siempre */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --kb-paper: #0F1D16;
-    --kb-ink: #FBF6EC;
-    --kb-muted: #8EA596;
-    --kb-rule: #7DB896;
-    --kb-rule-soft: #2C4B3B;
-    --kb-shade: #1C3328;
-    --kb-tint: #142419;
-    --kb-green: #7DB896;
-    --kb-link: #F0A06A;
-    --kb-link-visited: #D9824A;
-
-    color-scheme: dark;
-  }
-}
+/* aquí iba el antiguo tema oscuro */
